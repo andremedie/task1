@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        title Document
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+            style.
+                body {
+                background-color: skyblue;
+                text-align: center;
+                }
+                li {
+                list-style-type: none;
+                }
+    body
+        h1 Tomtens lista på julklappar🎁
+        ul
+            each age, name in data
+                li #{name} kostar cirka #{age} kronor!
+
+        br
+        h3 Vad önskar du dig till julklapp, och vad kostar den?
+        include get_forms.pug
+        h3 Ta bort julklapp?
+        include delete.pug
+        h3 Ändra bland julklapparna:
+        include post_forms.pug
+        include show.pug
+        br 
+
+    
+    
+
+
+
+
+
+    //- img(src='pug123.jpg' alt="buhu")
